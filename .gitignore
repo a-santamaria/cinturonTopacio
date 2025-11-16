@@ -1,0 +1,30 @@
+# Python virtual environments
+.venv/
+venv/
+ENV/
+
+# Python caches and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Editor settings
+.vscode/
+.idea/
+.DS_Store
+
+# MicroPython artifacts
+*.mpy
+*.uf2
+*.dfu
+*.hex
+*.bin
+*.elf
+mpy-cross/
+build-*/
+ports/
