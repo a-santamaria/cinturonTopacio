@@ -287,7 +287,7 @@ while True:
     t = utime.ticks_ms()
     if level and utime.ticks_diff(t, _last) > COOLDOWN_MS:
         _last = t
-        print("Pattern", PATTERN_MODE, "- Level", level, "triggered at", t)
+        print("Pattern", PATTERN_MODE, "- Level", level, " - value", reading, "triggered at", t)
         run_pattern(level)
         all_off()
 
