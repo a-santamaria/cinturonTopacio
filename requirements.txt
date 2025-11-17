@@ -1,0 +1,5 @@
+mpremote==1.26.1
+platformdirs==4.4.0
+pyserial==3.5
+pyudev==0.24.4
+rshell==0.0.36
