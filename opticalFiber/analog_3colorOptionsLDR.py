@@ -19,10 +19,11 @@ PATTERN_MODE = 8
 # ==========================================================
 
 # Adjust these after watching the printed readings
-# For LDR: Higher values = more light, Lower values = less light
-LEVEL_ONE = 30000    # Dim light
-LEVEL_TWO = 45000    # Medium light
-LEVEL_THREE = 55000  # Bright light
+# For LDR: Lower values = more covered (darker), Higher values = more light
+# Range: 53500 (full light) to 25000 (fully covered)
+LEVEL_ONE = 48000    # Slightly covered
+LEVEL_TWO = 38000    # Medium covered
+LEVEL_THREE = 30000  # Almost fully covered
 
 COOLDOWN_MS = 120
 CHASE_DELAY_MS = 140
@@ -277,11 +278,11 @@ while True:
     # print("Light level:", reading)
 
     level = 0
-    if reading > LEVEL_THREE:
+    if reading < LEVEL_THREE:
         level = 3
-    elif reading > LEVEL_TWO:
+    elif reading < LEVEL_TWO:
         level = 2
-    elif reading > LEVEL_ONE:
+    elif reading < LEVEL_ONE:
         level = 1
 
     t = utime.ticks_ms()
