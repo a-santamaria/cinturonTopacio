@@ -61,8 +61,8 @@
     [ "bb1:2b.j", "led6:VDD", "red", [ "v67.2", "h-230.4", "v96" ] ],
     [ "bb1:2b.j", "led8:VDD", "red", [ "v67.2", "h-345.6", "v96" ] ],
     [ "bb1:2b.j", "led10:VDD", "red", [ "v67.2", "h-441.6" ] ],
-    [ "pico:GP4", "acgyr:SDA", "green", [ "h0" ] ],
-    [ "pico:GP5", "acgyr:SCL", "blue", [ "h0" ] ],
+    [ "pico:GP20", "acgyr:SDA", "green", [ "h0" ] ],
+    [ "pico:GP21", "acgyr:SCL", "blue", [ "h0" ] ],
     [ "pico:3V3", "acgyr:VCC", "red", [ "h58.8", "v172.8", "h-220.8", "v-86.4" ] ],
     [ "pico:GND.2", "acgyr:GND", "black", [ "h0" ] ]
   ],

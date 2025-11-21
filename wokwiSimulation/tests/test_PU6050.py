@@ -3,7 +3,7 @@ from mpu6050 import MPU6050
 import time
 
 # Configure I2C on GP4 (SDA) and GP5 (SCL)
-i2c = I2C(0, scl=Pin(5), sda=Pin(4), freq=400000)
+i2c = I2C(0, scl=Pin(21), sda=Pin(20), freq=400000)
 
 sensor = MPU6050(i2c)
 
