@@ -1,5 +1,5 @@
 from machine import I2C, Pin
-#from mpu6050 import MPU6050
+#from BMI160 import BMI160
 import time
 import math
 
@@ -20,19 +20,19 @@ class BMI160:
         data = self.i2c.readfrom_mem(self.addr, reg, 2)
         return int.from_bytes(data, "little")
 
-    def accel(self):
+    def get_accel(self):
         ax = self.read16(0x12)
         ay = self.read16(0x14)
         az = self.read16(0x16)
         return ax, ay, az
 
-    def gyro(self):
+    def get_gyro(self):
         gx = self.read16(0x0C)
         gy = self.read16(0x0E)
         gz = self.read16(0x10)
         return gx, gy, gz
 
-    def temperature(self):
+    def get_temperature(self):
         return self.read16(0x20)
 
 
