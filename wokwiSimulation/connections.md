@@ -4,8 +4,8 @@ Pico 2           BMI160
 |-------------------------|
 3V3 (OUT)   -->  VIN
 GND         -->  GND
-GPI20 (SDA) -->  SDA
-GPI21 (SCL) -->  SCL
+GPI10 (SDA) -->  SDA
+GPI11 (SCL) -->  SCL
 3V3         -->  CS     (puts BMI160 into I2C mode)
 GND         -->  SAO    (I2C address = 0x68)
 
@@ -16,7 +16,7 @@ GND         -->  SAO    (I2C address = 0x68)
 
 Pico 2           WS2812B                                
 |-------------------------|
-VSYS (5V IN)    -->  VCC (using usb power bacnk)
+VBUS (5V USB)    -->  VCC (using usb power bank)
 GPI22           -->  IN
 GND             -->  GND
 OUT             -->  Next Led
@@ -38,4 +38,4 @@ BLACK     -->   GND     -->     GND  -->   GND
 
 - Negro - Gris - Azul -> ground
 
-- Verde -> Datos
+- Verde - Morado - Blanco -> Datos
