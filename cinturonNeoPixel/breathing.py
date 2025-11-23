@@ -10,7 +10,7 @@ i2c = I2C(0, scl=Pin(11), sda=Pin(10), freq=400000)
 sensor = BMI160(i2c)
 
 # Neopixels on GP22
-NUM_LEDS = 10
+NUM_LEDS = 2
 np = NeoPixel(Pin(22), NUM_LEDS)
 
 # Breathing parameters
